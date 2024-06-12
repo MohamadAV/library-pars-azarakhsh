@@ -11,7 +11,7 @@ export const BooksProvider = ({ children }) => {
     pageSize: 12,
     search: "تست",
   });
-  
+
   const fetchData = async (from, pageSize, search) => {
     try {
       const response = await axios.get(
@@ -26,6 +26,7 @@ export const BooksProvider = ({ children }) => {
           },
           headers: {
             "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
           },
         }
       );
