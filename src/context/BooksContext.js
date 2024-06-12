@@ -15,7 +15,7 @@ export const BooksProvider = ({ children }) => {
   const fetchData = async (from, pageSize, search) => {
     try {
       const response = await axios.get(
-        `https://testv5.parslib.com:7443/develop/faces/rest/searchbiblio/multimediaList`,
+        `/develop/faces/rest/searchbiblio/multimediaList`,
         {
           params: {
             multimediaType: 4,
@@ -25,10 +25,7 @@ export const BooksProvider = ({ children }) => {
             searchText: search === "" ? "تست" : search,
           },
           headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin":
-              "https://library-pars-azarakhsh.vercel.app/",
-            "Access-Control-Allow-Credentials": "true",
+            'Access-Control-Allow-Origin': "*",
           },
         }
       );
