@@ -26,7 +26,9 @@ export const BooksProvider = ({ children }) => {
           },
           headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin":
+              "https://library-pars-azarakhsh.vercel.app/",
+            "Access-Control-Allow-Credentials": "true",
           },
         }
       );
