@@ -15,7 +15,7 @@ export const BooksProvider = ({ children }) => {
   const fetchData = async (from, pageSize, search) => {
     try {
       const response = await axios.get(
-        `https://testv5.parslib.com:7443/develop/faces/rest/searchbiblio/multimediaList`,
+        `/develop/faces/rest/searchbiblio/multimediaList`,
         {
           params: {
             multimediaType: 4,
