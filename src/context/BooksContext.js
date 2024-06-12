@@ -11,6 +11,7 @@ export const BooksProvider = ({ children }) => {
     pageSize: 12,
     search: "تست",
   });
+  
   const fetchData = async (from, pageSize, search) => {
     try {
       const response = await axios.get(

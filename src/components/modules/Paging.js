@@ -19,7 +19,7 @@ function Paging({ count, current }) {
         <div
           onClick={() => clickHandler((item - 1) * +parameters.pageSize)}
           key={item}
-          style={{ backgroundColor: current === item ? "#2e58e569" : "#fff" }}
+          style={{ backgroundColor: current === item ? "#bdbdbd" : "#fff" }}
           className="rounded-full mx-2 align-middle flex items-center justify-center w-8 h-8 text-s"
         >
           <span className="p-2">{item}</span>
