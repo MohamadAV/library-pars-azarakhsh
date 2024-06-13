@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { BooksContext } from "../../context/BooksContext";
-import { FcSearch } from "react-icons/fc";
 
 function SearchBar() {
   const { setParameters, parameters } = useContext(BooksContext);
